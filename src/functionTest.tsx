@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 
 interface ICC {
     c0?: string,
@@ -34,7 +34,7 @@ const CC = (props: ICC) => {
 }
 
 const BB = (props: IBB) => {
-    const { b0, b1, CCCom=CC, ...rest } = props;
+    const { b0, b1, CCCom = CC, ...rest } = props;
     return (
         <React.Fragment>
             <div>{b0}</div>
@@ -45,7 +45,7 @@ const BB = (props: IBB) => {
 }
 
 const AA = (props: IAA) => {
-    const { a0, a1, BBCom=BB, ...rest } = props;
+    const { a0, a1, BBCom = BB, ...rest } = props;
     return (
         <React.Fragment>
             <div>{a0}</div>
